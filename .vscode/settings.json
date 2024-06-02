@@ -1,0 +1,6 @@
+{
+  "cSpell.words": ["bodyparser"],
+  "files.exclude": {
+    "**/.git": false
+  }
+}

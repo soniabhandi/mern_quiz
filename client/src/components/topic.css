@@ -1,0 +1,38 @@
+.topic-selection {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .topic-selection h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .topic-selection label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .topic-selection input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .topic-selection button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .topic-selection button:hover {
+    background-color: #45a049; /* Darker green color */
+  }
+  
