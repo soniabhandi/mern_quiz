@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
 const path = require("path");
 const cors = require("cors");
+
 const userRoutes = require("./routes/user");
 const questionRoutes = require("./routes/question");
 const scoreRoutes = require("./routes/score");
@@ -16,9 +17,10 @@ const port = process.env.PORT || 5000;
 app.use(bodyparser.json());
 app.use(cors());
 
+// Serve static files from the React app
 app.use(express.static(path.join(__dirname, "..", "client", "build")));
 
-app.get("/", function (req, res) {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "client", "build", "index.html"));
 });
 
@@ -32,10 +34,6 @@ app.use("/api/users", userRoutes);
 app.use("/api/questions", questionRoutes);
 app.use("/api/scores", scoreRoutes);
 app.use("/api/topics", topicRoutes);
-
-app.get("/", (req, res) => {
-  res.send("working");
-});
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
