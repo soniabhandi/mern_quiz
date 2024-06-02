@@ -11,15 +11,15 @@ const scoreRoutes = require("./routes/score");
 const topicRoutes = require("./routes/topic");
 
 const app = express();
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 app.use(bodyparser.json());
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "..", "client", "build")));
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "client", "build", "index.html"));
 });
 
 const dbURI = process.env.MONGODB_URI;
