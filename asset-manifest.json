@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mern_quiz/static/css/main.6401bcd2.css",
+    "main.js": "/mern_quiz/static/js/main.dbdcd83d.js",
+    "index.html": "/mern_quiz/index.html",
+    "main.6401bcd2.css.map": "/mern_quiz/static/css/main.6401bcd2.css.map",
+    "main.dbdcd83d.js.map": "/mern_quiz/static/js/main.dbdcd83d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6401bcd2.css",
+    "static/js/main.dbdcd83d.js"
+  ]
+}
