@@ -14,7 +14,7 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const apiUrl = `${process.env.REACT_APP_BACKEND_URL}/api/users/register`;
+      const apiUrl = `http://localhost:5000/api/users/register`;
       const response = await axios.post(apiUrl, { name, email, password });
       setMessage("Registration successful!");
 

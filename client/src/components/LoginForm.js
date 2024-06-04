@@ -13,7 +13,7 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const apiUrl = `${process.env.REACT_APP_BACKEND_URL}/api/users/login`;
+      const apiUrl = `http://localhost:5000/api/users/login`;
       const response = await axios.post(apiUrl, { email, password });
       setMessage("Login successful!");
 
