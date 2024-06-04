@@ -24,6 +24,10 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "client", "build", "index.html"));
 });
 
+app.get('/test',(req,res)=>{
+  res.send('working')
+})
+
 const dbURI = process.env.MONGODB_URI;
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
